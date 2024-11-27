@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Truth or Dare Game</title>
+    <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Main container for the game viewport -->
+    <div class="container">
+        <div class="viewport">
+            <!-- Truth and Dare buttons at the top -->
+            <div class="button-container">
+                <button id="truthBtn" class="button button-default">Truth</button>
+                <button id="dareBtn" class="button button-default button-disabled">Dare</button>
+            </div>
+            
+            <!-- Card container -->
+            <div class="card-container">
+                <!-- Static card that stays behind -->
+                <div class="static-card">
+                    <div class="card-back"></div>
+                </div>
+
+                <!-- Animated card for displaying questions -->
+                <div class="animated-card" id="card">
+                    <!-- Card Front Structure -->
+                    <div class="card-front" id="questionDisplay">
+                        <div class="type-label"></div>
+                        <div class="inner-text-box">
+                            <!-- Content from Google Sheets will display here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Phase transition screen (hidden by default) -->
+            <div id="nextPhaseScreen" style="display: none;">
+                <h3 id="phasePrompt"></h3> <!-- Placeholder for dynamic prompt -->
+                <button id="continueButton">Continue</button>
+            </div>
+        </div>
+
+        <!-- Footer buttons (Reset Session and Play Game) -->
+        <div class="footer-buttons">
+            <!button id="resetSessionButton">Reset Session</button>
+            <button id="playGameButton">Play Game</button>
+        </div>
+    </div>
+
+    <!-- Error display (below the viewport) -->
+    <div id="errorDisplay" style="color: red; margin-top: 10px;"></div>
+
+    <!-- Include your JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
