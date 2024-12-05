@@ -3,7 +3,7 @@ const questionsPerPhase = {
   2: 12,
   3: 14,
   4: 14,
-  5: 8,
+  5: 10,
   6: 2,
 };
 
