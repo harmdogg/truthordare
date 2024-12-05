@@ -16,7 +16,7 @@ const phasePrompts = {
   3: "Time to heat things up a little 😍",
   4: "Let's get a little naughty 🫦",
   5: "Wanna get even naughtier???",
-  6: "OK, last few questions! Dares only!",
+  6: "OK, final cards! Dares only!",
 };
 
 window.addEventListener('load', () => {
