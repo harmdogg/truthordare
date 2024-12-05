@@ -1,5 +1,5 @@
 const questionsPerPhase = {
-  1: 8,
+  1: 10,
   2: 12,
   3: 12,
   4: 12,
